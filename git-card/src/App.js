@@ -21,9 +21,9 @@ class App extends React.Component {
       <>
       <div className="container">
         <div className="header">
-          <img src="./assets/lambdalogo.png" alt="Lambda Logo"/>
-          <p>❤️'s</p>
-          <img src="./assets/githublogo.png" alt="GitHub Logo" />
+          <img src={require("./assets/lambdalogo.png")} alt="Lambda Logo"/>
+          <p><span role="img" aria-label="heart emoji">❤️'s</span></p>
+          <img src={require("./assets/githublogo.png")} alt="GitHub Logo" />
         </div>
         <div>
           <GitUserList data={this.state.fetchData} />
